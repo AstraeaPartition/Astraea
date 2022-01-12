@@ -321,6 +321,7 @@ class StreamingContext private[streaming] (
     new SocketInputDStream[T](this, hostname, port, converter, storageLevel)
   }
 
+    /*
   /**
    * Creates an input stream from TCP source hostname:port. Data is received using
    * a TCP socket and the receive bytes is interpreted as UTF8 encoded `\n` delimited
@@ -357,6 +358,7 @@ class StreamingContext private[streaming] (
                                ): ReceiverInputDStream[T] = {
     new AstraeaInputDStream[T](this, hostname, port, converter, storageLevel)
   }
+  */
 
   /**
    * Create an input stream from network source hostname:port, where data is received
