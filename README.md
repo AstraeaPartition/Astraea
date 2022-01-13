@@ -10,7 +10,7 @@ To build Astraea, first run:
 
     mvn -Pyarn -Phadoop-2.7 -Dhadoop.version=2.7.3 -Phive -Phive-thriftserver -Dmaven.test.skip=true clean package -pl core
     
-Then, open ./Streaming/pom.xml, modify the property of Astraea.home as the location of the newly compiled spark-core_2.11-2.1.0.jar, then run:
+Then, edit ./Streaming/pom.xml, modify the property of Astraea.home as the location of the newly compiled spark-core_2.11-2.1.0.jar, then run:
 
     mvn -Pyarn -Phadoop-2.7 -Dhadoop.version=2.7.3 -Phive -Phive-thriftserver -Dmaven.test.skip=true clean package -pl streaming
 
