@@ -16,7 +16,8 @@ Edit ./Streaming/pom.xml, modify the property of Astraea.home as the location of
 
 Then, one can get the compiled spark-streaming_2.11-2.1.0.jar
 
-Next, one can download the pre-build spark-2.1 from https://spark.apache.org/downloads.html.
+Next, one can download the pre-build version of spark-2.1 from https://spark.apache.org/downloads.html.
+
 Put the previously compiled spark-core_2.11-2.1.0.jar and spark-streaming_2.11-2.1.0.jar to $SPARK_HOME$/jar/ for replacing the old jars. Then one can start computation.
 
 ## Using Astraea
