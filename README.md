@@ -22,6 +22,7 @@ Put the previously compiled spark-core_2.11-2.1.0.jar and spark-streaming_2.11-2
 The input data should be of csv format. Astraea regard the first element of a record as the key, which is used for partitioning in the reduce stage.
 
 Astraea receives the input data using the socketTextStream, for example
+
     val lines = ssc.socketTextStream("localhost", 9999)
     val data = lines.map(line => (line.split(",", 2)(0), line.split(",", 2)(1)))
     val result = data.groupByKey()
