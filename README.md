@@ -19,4 +19,4 @@ You can get the compiled spark-streaming_2.11-2.1.0.jar
 Next, you can download the pre-build spark-2.1 from https://spark.apache.org/downloads.html.
 Put the previously obtaind spark-core_2.11-2.1.0.jar and spark-streaming_2.11-2.1.0.jar to $SPARK_HOME$/jar/ and replace the old jars.
 
-The input data should be of csv format. Astraea regard the first value of a record as the key, which is used for partitioning.
+The input data should be of csv format. Astraea regard the first value of a record as the key, which is used for partitioning in the reduce stage.
